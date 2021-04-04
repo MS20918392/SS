@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.main-div{
+    height: 50vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+.file-input-button{
+background-color:lightgray;
+}
