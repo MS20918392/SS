@@ -1,6 +1,6 @@
 Dependancies
-1.install node 12.13.0 (https://nodejs.org/en/blog/release/v12.13.0)
-2.Default browser 3rd party cookies should be enabled
+1. install node 12.13.0 (https://nodejs.org/en/blog/release/v12.13.0)
+2. Default browser 3rd party cookies should be enabled
 
 Steps to run
 1. Checkout the code from git hub
