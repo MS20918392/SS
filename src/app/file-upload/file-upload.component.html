@@ -1,0 +1,24 @@
+<div class="main-div">
+    <mat-card class="example-card">
+        <mat-card-content>
+            Please authenticate with Google to upload the files
+            <button mat-button (click)="authenticate()">Authenticate</button>
+            <div *ngIf="signedInEmail"><br><br><b>You are signed in as : {{signedInEmail}}</b></div>
+            <div *ngIf="signedInEmail">
+                <p style="margin-top:20px;"> </p>
+                <mat-file-upload class="upload" [labelText]="'Select a file to upload:'"
+                    [selectButtonText]="'Choose File'"  [allowMultipleFiles]="false" [uploadButtonText]="'Upload to Google Drive'"
+                    (uploadClicked)="onUploadClicked($event)"></mat-file-upload>
+            </div>
+            <div *ngIf="fileUploadSuccess">
+                <p style="margin-top:20px;"> </p>
+                <span>File upload completed. Please check your <a target="_blank" style="color: cornsilk;"
+                        href="https://drive.google.com/drive/my-drive">Google Drive</a> for the new file</span>
+            </div>
+            <div *ngIf="fileUploadStarted">
+                <p style="margin-top:20px;"> </p>
+                <span>File upload started. Please wait...</span>
+            </div>           
+        </mat-card-content>
+    </mat-card>
+</div>
